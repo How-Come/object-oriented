@@ -9,8 +9,8 @@ using namespace std;
 
 class Print
 {
-    public:
-	    void print(queue<string>QUEUE);
+	public:
+		void print(queue<string>QUEUE);
 };
 
 #endif

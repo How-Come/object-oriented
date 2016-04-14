@@ -14,10 +14,10 @@ queue<string>Scan::ToStringQueue(string input)
 
 	for (i=0; i<input.size(); i++)
 	{
-		
+
 		if (input[i]>='0' && input[i]<='9' || input[i]=='.')  //判断是不是数字或者是小数点
 		{
-		    num += input[i];  //将数字或者小数点储存起来，用string格式可以使数字可以连在一起
+			num += input[i];  //将数字或者小数点储存起来，用string格式可以使数字可以连在一起
 			count++ ;
 			if (count > 10)
 			{
@@ -28,12 +28,12 @@ queue<string>Scan::ToStringQueue(string input)
 				break;  //无意义，返回
 			}
 		}
-		
+
 		else if (input[i] == '+' || input[i] == '-' || input[i] == '*' || input[i] == '/' || input[i] == '(' || input[i] == ')')
 		{
 			if (num != "")
 			{
-			    QUEUE.push(num);
+				QUEUE.push(num);
 				num = "";
 				count = 0;
 			}
@@ -41,7 +41,7 @@ queue<string>Scan::ToStringQueue(string input)
 			QUEUE.push(num);
 			num="";
 		}
-		
+
 	}
 
 	if (count != 0)  //判断末尾是不是数字

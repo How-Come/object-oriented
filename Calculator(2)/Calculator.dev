@@ -1,5 +1,5 @@
 [Project]
-FileName=项目1.dev
+FileName=Calculator.dev
 Name=项目1
 Type=1
 Ver=2
@@ -29,6 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=3
 CompilerSettings=0000000100000000000000000
+UnitCount=0
 
 [VersionInfo]
 Major=1

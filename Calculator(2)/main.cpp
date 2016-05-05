@@ -7,7 +7,7 @@
 #include<queue>
 using namespace std;
 
-int main(int argc, char* argv[])  //命令行调用？？不是很懂。。。
+int main()  //命令行调用？？不是很懂。。。
 {
 	string target,target1;
 	queue<string>QUEUE;

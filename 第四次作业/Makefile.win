@@ -1,0 +1,37 @@
+# Project: Calculator
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Scan.o Print.o Calculation.o main.o
+LINKOBJ  = Scan.o Print.o Calculation.o main.o
+LIBS     = -L"D:/Dev C++/MinGW64/lib" -L"D:/Dev C++/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Dev C++/MinGW64/include" -I"D:/Dev C++/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev C++/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev C++/MinGW64/include" -I"D:/Dev C++/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev C++/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev C++/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Calculator.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Scan.o: Scan.cpp
+	$(CPP) -c Scan.cpp -o Scan.o $(CXXFLAGS)
+
+Print.o: Print.cpp
+	$(CPP) -c Print.cpp -o Print.o $(CXXFLAGS)
+
+Calculation.o: Calculation.cpp
+	$(CPP) -c Calculation.cpp -o Calculation.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)

@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+.public-header {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 0;
+    background: url("../img/f.jpg");
+    background-repeat :repeat;
+
+    background-size: cover;
+    background-position: top;
+}
+
+.public-header .header-logo {
+    padding-top: 10px;
+    padding-left: 5px;
+    float: left;
+    height: 20px;
+}
+
+.public-header .header-logo a{
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.public-header .header-logo a:hover {
+
+    color: #FF0000;
+}
+
+
+
+.public-header .header-nav1 .slogan {
+    padding-top: 14px;
+    color: #fff;
+    float: left;
+}
+
+.public-header .header-nav .slogan {
+    padding-top: 14px;
+    color: #fff;
+    float: left;
+}
+
+.public-header .header-nav1 .article {
+    padding-top: 14px;
+    float: left;
+    margin-left: 12px;
+}
+
+.public-header .header-nav1 .article a {
+    color: #fff;
+}
+
+.public-header .header-nav1 .article a:hover {
+     color: #FF0000;
+}
+
+
+
+.public-header .header-nav1 .Cancellation a:hover {
+         color: #FF0000;
+}
+
+.public-header .header-nav .btn {
+    padding-top: 4px;
+    padding-left: 10px;
+    float: left;
+    -web-kit-appearance:none;
+    -moz-appearance: none;
+    outline:0;
+
+}
+
+.public-header .header-nav1 {
+    padding-left: 900px;
+
+}
+
+.public-header .header-nav {
+    padding-left: 990px;
+
+}
+
+/*.public-header .header-nav .item {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: lighter;
+}*/
+
+/*.public-header .header-nav .item a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.public-header .header-nav .item a:hover {
+ text-decoration: underline;
+ color: #FF0000;
+}*/
+
+.public-header .header-welcome {
+    padding-top: 120px;
+    height: 40px;
+    height: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+.public-header .header-search {
+    text-align: center;
+    padding-top: 85px;
+}
+
+.public-header .header-search .btn {
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+
+    color: #fff;
+}
+
+.public-header .header-hot {
+    padding: 10px;
+    text-align: center;
+}
+
+.public-header .header-hot a {
+    color: 	#fff;
+}
+
+.public-header .header-hot a:hover {
+ text-decoration: underline;
+ color: #FF0000;
+}
+
+.public-container {
+    position: relative;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.public-footer {
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    height: 40px;
+    background: #ebedef;
+
+}

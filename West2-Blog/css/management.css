@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.b-header {
+    height: 700px;
+	overflow:auto;
+}
+
+.b-header .public-container .sort {
+    margin-top: 50px;
+    padding-left: 420px;
+
+}
+
+
+.b-header .public-container .sort ul {
+    list-style-position: inside;
+    line-height:40px;
+}
+
+
+.b-header .public-container .sort li {
+    color: 	#696969;
+    font-size: 20px;
+}
+
+.b-header .public-container .sort p {
+    color: 	#FF0000;
+    font-size: 15px;
+    padding-left: 200px;
+}

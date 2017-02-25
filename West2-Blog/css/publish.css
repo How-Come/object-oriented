@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+.p-header {
+
+    width: 100%;
+    height: 1200px;
+}
+
+.p-header .public-container .logo{
+    padding-top: 70px;
+    height: 30px;
+}
+
+.p-header .public-container .logo a{
+    float: left;
+    font-size: 35px;
+    color: #0aac8e;
+}
+
+.p-header .public-container .logo a:hover{
+    color: #fec503;
+}
+
+.p-header .public-container .logo .wel {
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    color: #000;
+}
+
+.p-header .public-container .blank {
+    width: 100%;
+    height: 100px;
+}
+
+.p-header .public-container .main {
+    width: 700px;
+    height:830px;
+    border:3px solid #0aac8e;
+    margin: 0 auto;
+}
+
+.p-header .public-container .main .title {
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 22px;
+    float: left;
+}
+
+
+.p-header .public-container .main .title1 {
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+}
+
+.p-header .public-container .main .content{
+
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 22px;
+    float: left;
+}
+
+.p-header .public-container .main .content1{
+
+   
+    padding-left: 50px;
+    font-size: 22px;
+    float: left;
+}
+
+.p-header .public-container .main .pic {
+    float: left;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.p-header .public-container .main .show{
+    float: left;
+    height: 150px;
+    width: 300px;
+    margin-left: 200px;
+    background: url("../img/1.jpg");
+}
+
+.p-header .public-container .main .author {
+    padding-top: 30px;
+	padding-left:50px;
+    font-size: 22px;
+    float: left;
+}
+
+.p-header .public-container .main .a-input {
+    margin-top: 30px;
+	margin-left:5px;
+    float: left;
+}
+
+.p-header .public-container .main .label {
+    padding-top: 5px;
+	padding-left:50px;
+    font-size: 22px;
+    float: left;
+}
+
+.p-header .public-container .main .label1 {
+    padding-top: 5px;
+	padding-left:50px;
+    font-size: 22px;
+    float: left;
+}

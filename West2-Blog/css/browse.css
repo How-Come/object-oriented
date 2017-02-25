@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+.b-header {
+
+    width: 100%;
+    height: 1500px;
+}
+
+
+.b-header .public-container .logo{
+    padding-top: 70px;
+    height: 30px;
+}
+
+.b-header .public-container .logo a{
+    float: left;
+    font-size: 35px;
+    color: #0aac8e;
+}
+
+.b-header .public-container .logo a:hover{
+    color: #fec503;
+}
+
+.b-header .public-container .logo .wel {
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    color: #000;
+}
+
+.b-header .public-container .picture {
+    margin-top: 50px;
+    height: 400px;
+    
+}
+
+.b-header .public-container .text h3{
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 30px;
+
+}
+
+.b-header .public-container .text .information {
+    padding-left: 40px;
+    padding-top: 20px;
+    color:#363636;
+}
+.b-header .public-container .text .classify {
+    font-size: 20px;
+    color: #FF0000;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.b-header .public-container .text .content {
+    color: #696969;
+    
+    padding-left: 40px;
+    padding-top: 20px;
+}

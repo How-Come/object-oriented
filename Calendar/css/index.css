@@ -1,0 +1,88 @@
+input[type=text] {
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  width: 20%;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-left: 100px;
+}
+
+input[type=button] {
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  width: 22%;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.current{
+  background-image: url(../img/circle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  text-align: center;`
+}
+.swipe-wrap > figure {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#slider {
+  max-width: 650px;/* 设置最大的宽度 */
+  margin: 0px auto; /* 居中对齐 */
+}
+
+figure {
+
+  margin: 0;/* 对齐，四周宽度都为0，在轮播的时候，以整张图片进行移动 */
+}
+
+.page-swipe nav #position {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+table{
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+td {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+  font-size: .9rem;
+  height: 2rem;
+}
+.none{
+  display: none;
+}
+.today {
+  background-image: url(./img/circle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}

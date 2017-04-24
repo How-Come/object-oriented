@@ -21,15 +21,32 @@ window.onload = function(){
           dd[i].className = '';
         }
       }
+
+      var getChildNodes=function(ele){
+       var childArr=ele.children || ele.childNodes,
+         childArrTem=new Array();  //  临时数组，用来存储符合条件的节点
+         for(var i=0,len=childArr.length;i<len;i++){
+          if(childArr[i].nodeType==1){
+            childArrTem.push(childArr[i]);
+          }
+        }
+        return childArrTem;
+      }
+
       function changcolor(){
        var dd = document.getElementsByTagName('td');
        var len = dd.length;
        for(i=0; i<len; i++){
         dd[i].onclick = function(){
           clearClass();
-          this.className = 'current';
+          var Y = document.getElementById('Year').value;    //获取输入的年份
+          var q = this.parentNode.parentNode.parentNode.parentNode;
+          var w = getChildNodes(q);
+          var r = w[1].innerHTML;
+          // alert(w.length);
 
-          alert(Y+'年'+'月'+this.innerHTML+'日');
+          this.className = 'current';
+          alert(Y+'年'+r+'月'+this.innerHTML+'日');
 
         }
       }
@@ -39,14 +56,15 @@ window.onload = function(){
 
       var s='';
       for (var i = 11; i >= 0; i--) {
-        
+
          firstday = new Date(y, i, 1), //获取当月的第一天  月份：m==i+1
          dayOfWeek = firstday.getDay(),   //判断第一天是星期几(返回[0-6]中的一个，0代表星期天，1代表星期一，以此类推)
          days_per_month = new Array(31, 28 + isLeap(y), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31),         //创建月份数组
          str_nums = Math.ceil((dayOfWeek + days_per_month[i]) / 7);                        //确定日期表格所需的行数
          var adres= imgArr[i];        
          P[i].src = adres;
-         M[i].innerHTML = "<p style='text-align:left; padding-left:30px;font-size:22px;'><b>"+(i+1)+"</b></p>"; //显示月份
+         x = i+1; //显示月份
+         M[i].innerHTML = x;
          s = "<tr><th><b>SU</b></th><th><b>MO</b></th><th><b>TU</b></th><th><b>WE</b></th><th><b>TH</b></th><th><b>FR</b></th><th><b>SA</b></th></tr>"; //打印表格第一行(显示星期)
          
          for (j = 0; j < str_nums; j ++) {         //二维数组创建日期表格
